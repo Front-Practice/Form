@@ -115,7 +115,7 @@ const Form: React.FC = () => {
         <div className="w-full flex flex-col items-center">
           <div className="w-[350px] h-auto bg-[#fff] rounded-lg shadow-lg">
             <div className="flex items-center justify-center mt-[20px] font-bold text-3xl">
-              <h1>{editingId !== null ? 'Update User' : 'Signup Form'}</h1>
+              <h1>{'Signup Form'}</h1>
             </div>
             <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-5 w-full p-6">
               <div>
@@ -225,7 +225,7 @@ const Form: React.FC = () => {
           <table className="w-full max-w-5xl bg-white rounded-t-lg border-b-[5px] border-[#01987A] text-left shadow-lg table-fixed">
             <thead className="bg-[#01987A] text-white">
               <tr>
-                <th className="p-3 w-12 text-center">#</th>
+                <th className="p-3 w-12 text-center">№</th>
                 <th className="p-3">Full Name</th>
                 <th className="p-3 text-center">Email</th>
                 <th className="p-3">Password</th>
@@ -236,7 +236,7 @@ const Form: React.FC = () => {
             </thead>
             <tbody className="text-gray-800">
               {tableData.map((row, index) => (
-                <tr key={row.id} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                <tr key={row.id} className={index % 2 === 0 ? 'bg-white' : 'bg-green-50'}>
                   <td className="p-3 align-middle text-center">{index + 1}</td>
                   <td className="p-3 align-middle truncate" title={row.fullName}>
                     {row.fullName}
