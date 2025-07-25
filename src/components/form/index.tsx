@@ -62,7 +62,7 @@ const Form: React.FC = () => {
 
   const initialTableData: TableRowData[] = [];
 
-  const [view, setView] = useState<'form' | 'table'>('table');
+  const [view, setView] = useState<'form' | 'table'>('form');
   const [formData, setFormData] = useState<FormData>(initialFormState);
   const [tableData, setTableData] = useState<TableRowData[]>(initialTableData);
   const [editingId, setEditingId] = useState<number | null>(null);
